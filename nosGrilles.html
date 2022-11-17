@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples de grilles css</title>
+    <style>
+        .maGrille1{
+            display: grid;
+            grid-template-columns: 150px 250px 200px 120px;
+            grid-template-rows: 100px 150px 100px 200px;
+            border: 1px solid black;
+        }
+        .element1{
+            background-color: darkslategray;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .element2{background-color: darkslategray;}
+        .element3{
+            background-color: darkslategray;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .element4{background-color: darkslategray;}
+
+        .maGrille2{
+            display: grid;
+            grid-template-columns:20% 30% 40% 10%;
+            grid-template-rows: 100px 150px 100px 200px;
+            border: 1px solid rgb(39, 3, 38);
+        }
+        .elementa{
+            background-color:rgb(50, 142, 142);     
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .elementb{background-color:rgb(50, 142, 142);}
+        .elementc{
+            background-color:rgb(50, 142, 142);
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .elementd{background-color:rgb(50, 142, 142);}
+
+        .maGrille3{
+            display: grid;
+            grid-template-columns: 2fr 3fr 4fr 1fr;
+            grid-template-rows: 100px 150px 100px 200px;
+            border: 1px solid rgb(39, 3, 38);
+        }
+        .elementa1{
+            background-color:rgb(101, 231, 196);     
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .elementb2{background-color:rgb(101, 231, 196);}
+        .elementc3{
+            background-color:rgb(101, 231, 196);
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .elementd4{background-color:rgb(101, 231, 196);}
+        .maGrille4{
+            display: grid;
+            grid-template-columns: 2fr 3fr 4fr 1fr;
+            grid-template-rows: 100px 150px 100px 200px;
+            border: 1px solid rgb(188, 104, 185);
+        }
+        .elementa11{
+            background-color:rgb(188, 104, 185);;     
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .elementb22{background-color:rgb(188, 104, 185);}
+        .elementc33{
+            background-color:rgb(188, 104, 185);
+            grid-column: 4/5;
+            grid-row: 4/5;
+        }
+        .elementd44{background-color:rgb(188, 104, 185);}
+    </style>
+</head>
+<body>
+    <h2>Subdivision de la largeur en pixels</h2>
+    <div class="maGrille1">
+        <div class="element1">Bien le bonjour</div>
+        <div class="element2">Comment allez vous ?</div>
+        <div class="element3">Il est maintenant temps</div>
+        <div class="element4">De prendre un bon repas</div>
+    </div>
+    <hr>
+    <h2>Subdivision de la largeur en poucentages donc la mise en page est identiques sur tout les écrans</h2>
+    <div class="maGrille2">
+        <div class="elementa">Vivre et mourrir</div>
+        <div class="elementb">Comme le vent...</div>
+        <div class="elementc">Moi seul peux</div>
+        <div class="elementd">A la victoire</div>
+    </div>
+    <hr>
+    <h2>Subdivision de la largeur en fractions donc la mise en page est identiques sur tout les écrans</h2>
+    <div class="maGrille3">
+        <div class="elementa1">Kratos et Atreus</div>
+        <div class="elementb2">Thor et Odin</div>
+        <div class="elementc3">Freya et Freyr</div>
+        <div class="elementd4">Brock et Sindri</div>
+    </div>
+    <hr>
+    <h2>Subdivision en utilisant  grid-column & grid-row seulment</h2>
+    <div class="maGrille4">
+        <div class="elementa11">Zeus et Era</div>
+        <div class="elementb22">Posseidon & Hades</div>
+        <div class="elementc33">Helios & Hermes</div>
+        <div class="elementd44">Sparte & Kratos</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo Layout Grid</title>
+    <style>
+        .boulangerie{
+            display:grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 5em 30em 5em;
+        }
+        .titre{
+            font-size: 3.2em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            background-color: rgb(25, 46, 84); color: white;
+            padding-top: 0.1em;
+        }
+        .liens{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .pied{
+            grid-column: 1/4;
+            grid-row: 3/4;
+            background-color: rgb(25, 46, 84); color: white;
+        }
+        .gallerie{
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .transit  {transition-duration: 0.5s; background-color: rgb(25, 46, 84); border-radius: 0.4em;}
+		.transit:hover{translate: 1.5em;}
+
+        #col {color: rgb(25, 46, 84);}
+        .blanc {color:white}
+    </style>
+</head>
+<body>
+<div class="boulangerie">
+    <div class="titre"> Notre Boulangerie Xpress</div>
+    <div class="liens">
+        <ul id="col" >
+            <li class="transit"><a href="Acceuil.html" class="blanc">Acceuil</a></li>
+            <br>
+            <div align="justify">Nous vous invitions dans notre boulangerie.</div>
+            <br>
+            <li class="transit"><a href="Services.html" class="blanc">Services</a></li>
+            <br>
+            <div>Du lundi au Samedi :</div>
+            <div>De 7h à 19h.</div>
+            <div>Dimanche fermée.</div>
+            <br>
+            <li class="transit"><a href="Contact.html" class="blanc">Contact</a></li>
+            <br>
+            <div>Téléphone : </div>
+            <div>04/45.123.157</div>
+            <br>
+            <div>Adresse @mail :</div>
+            <div><a href="boualangerie.html">Boulagerie@hotmail.com</a></div>
+            <br>
+            <div>Lieux :</div>
+            <div><a href="lieux.html">Rue des Patisseries 15 1000 Bruxelles.</a></div>
+            <img src="lieux.png" width="60">
+        </ul>
+    </div>
+    <div class="pied">CopyLeft Boulangerie Xpress, 2022</div>
+    <div class="gallerie">
+        <img src="pains.webp" width="300">
+        <img src="gateau.jpg" width="300">
+        <img src="patisserie.jpg" width="300" height="135">
+    </div>
+</div>
+</body>
+</html>
